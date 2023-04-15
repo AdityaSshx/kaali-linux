@@ -1,0 +1,5 @@
+requests
+bs4
+git+https://github.com/SilentDemonSD/cinemagoer
+aiohttp
+
