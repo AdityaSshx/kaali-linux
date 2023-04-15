@@ -19,11 +19,5 @@ RUN chmod 755 /kaal.sh
 EXPOSE 80 8888 8080 443 5130 5131 5132 5133 5134 5135 3306
 CMD  /kaal.sh
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
